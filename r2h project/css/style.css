@@ -1,0 +1,274 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header,nav,main,section,article, footer{
+  float:left;
+  width: 100%;
+  height: 70px;
+  /* margin:0 5%; */
+  /* clear:both; */
+  /* border:2px solid black; */
+}
+body>header{
+ /* margin: 0 5% 0 5%;  */
+ clear: both;
+ 
+}
+header>nav{
+  margin-top: 5px;
+}
+header>nav a{ 
+  /* text-align: center;
+  line-height: 15px;
+  border: 2px solid blue;
+  margin: 0 13%;*/
+    text-decoration: none; 
+    margin: 0 10%;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+  
+}
+body main {
+  height: 500px;
+  width: 100%;
+ 
+}
+
+body section{
+height: 250px;
+}
+
+section>h2, section h2+p{
+  /* border: 2px solid red; */
+  width: 50%;
+  margin: 2%;
+  /* clear: both; */
+}
+section img.paris1{
+  width: 20%;
+  float: right;
+  clear: both;
+  position: relative;
+  margin: 1% 3%;
+  padding-bottom: 5%;
+  }
+
+body article{
+  height: 400px;
+  width: 100%;
+}
+body article>section.togo{
+  width:50%;
+  height: 400px;
+  float: left;
+  text-align: center;
+  /* height: 50%; */
+ 
+}
+article>section.togo h4{
+margin:2%;
+}
+article>section.togo p{
+  margin: 2% 30%;
+}
+footer{
+width: 100%;
+position: relative;
+clear: both;
+/* height: px; */
+}
+footer>h5, footer>h5+p, footer a{
+  width: 20%;
+  height: 5px;
+ 
+}
+footer>h5+p{
+float: right  ;
+margin: 0 2%;
+width: 25%;
+height: 10px;
+}
+footer>h5{
+  margin-top: 2% ;
+  float: left;
+  clear: both;
+}
+
+footer a>.fa-brands{
+width: 10%;
+
+/* float: left; */
+/* text-align: center;
+clear: both;
+padding: 2px 0 ;
+margin: 5px 2px; */
+
+text-decoration: none; 
+margin: 1% 3%;
+border: 0;
+/* line-height: 2.5; */
+padding: 0 5px;
+font-size: 1rem;
+text-align: center;
+color: #fff;
+text-shadow: 1px 1px 1px #000;
+border-radius: 5px;
+background-image: linear-gradient(to top left,
+                                  rgba(0, 0, 0, .2),
+                                  rgba(0, 0, 0, .2) 30%,
+                                  rgba(0, 0, 0, 0));
+box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+            inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+/* pageTwo */
+header.pageTwo, footer.pageTwo{
+  height: 50px;
+  width: 100%;
+  /* border: 2px solid black; */
+  }
+
+section.toDos{
+height:650px;
+width: 25%;
+/* border: 2px solid blue; */
+float: left;
+text-align: center;
+}
+section.toDos>*{
+  /* margin: 5% 0; */
+  padding: 10px;
+}
+body main.pageTwoMain {
+  height: 600px;
+  width: 100%;
+  background: url(https://i.postimg.cc/Qt87hkdC/Getty-Images-135034702.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main.pageTwoMain h1+p{
+margin: 0 25%;
+text-align: center;
+color: red;
+font-size: 30px;
+font-weight: bold;
+height: 100px;
+width: 50%;
+
+}
+
+/* .bigger{
+  width: 40%;
+} */
+/* pageThree */
+body.pageThreeBody{
+  background: url(https://worldinsidepictures.com/wp-content/uploads/2013/06/Eiffel-Tower-Night-Fountain-Paris-France.jpg);
+  background-repeat: no-repeat;
+  background-size: cover ;
+}
+
+main.pageThreeMain{
+ height: 800px;
+ width: 50%;
+ margin-left: 25%;
+ background: rgba(115,	56	,32,.60	);
+}
+main.pageThreeMain>*{
+  margin:2% 10% 0 10%;
+  
+  text-align: center;
+}
+main form.message input{
+  height: 70px;
+  width: 60%;
+}
+main.pageThreeMain button{
+  margin:2% 45%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* font-famiily: 'croissant one' 'parisiene' 'bhutuka expanded one' */
+body{
+background: rgba(115,	56	,32,.5	);
+}
+
+header,footer{
+  color:rgba(233, 204	,162, 1	);
+  background:  rgba(23, 20, 27 , .6)	;
+  text-decoration: none;
+  
+  font-style: bold ;
+  font-weight: 400;
+}
+header>nav a{
+  color:rgba(238,216,143, 1	);
+  background: rgba(108,73,47,1);
+}
+main>h1{
+color: gold	;
+margin: 5% 18%;
+font-size: 80px;
+text-align: center;
+}
+h1,h2,h3,h4,h5,h6{
+font-family: 'Croissant One';
+}
+header,footer, p, label{
+  font-family: 'Montserrat', sans-serif;
+  color:rgba(238,216,143, 1	);
+
+}
+section.toDos p{
+ font-size: 16px;
+}
+/* header>*,footer a{
+  font-family: 'BhuTuka Expanded One'; 
+} */
+
+main.pageOneMain{
+  background-image:url(https://i.postimg.cc/ydDnTPht/Paris-2017.jpg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+
+section>h2, article>section h4{
+  color:black;
+  
+}
+section p{
+  color: rgba(238,216,143, 1	);
+ 
+  font-size: 20px;
+}
+
+section.toDos>h4{
+margin: 1%;
+color: black;
+
+}

@@ -105,13 +105,13 @@ footer>h5, footer>h5+p, footer a{
   height: 5px;
  
 }
-footer>h5+p{
+footer>h3+p{
 float: right  ;
 margin: 0 2%;
 width: 25%;
 height: 10px;
 }
-footer>h5{
+footer>h3, footer>h2{
   margin-top: 2% ;
   float: left;
   clear: both;
@@ -172,7 +172,7 @@ body main.pageTwoMain {
 main.pageTwoMain h1+p{
 margin: 0 25%;
 text-align: center;
-color: red;
+color: white;
 font-size: 30px;
 font-weight: bold;
 height: 100px;
@@ -194,7 +194,7 @@ main.pageThreeMain{
  height: 800px;
  width: 50%;
  margin-left: 25%;
- background: rgba(115,	56	,32,.60	);
+ background: rgba(115,	56	,32,1	);
 }
 main.pageThreeMain>*{
   margin:2% 10% 0 10%;
@@ -213,7 +213,7 @@ main.pageThreeMain button{
 /*******************************************/
 /* font-famiily: 'croissant one' 'parisiene' 'bhutuka expanded one' */
 body{
-background: rgba(115,	56	,32,.5	);
+background: rgba(115,	56	,32,1	);
 }
 
 header,footer{
@@ -236,10 +236,12 @@ text-align: center;
 }
 h1,h2,h3,h4,h5,h6{
 font-family: 'Croissant One';
+color: white;
 }
 header,footer, p, label{
   font-family: 'Montserrat', sans-serif;
-  color:rgba(238,216,143, 1	);
+  color:white;
+  /* color:rgba(238,216,143, 1	); */
 
 }
 section.toDos p{
@@ -258,17 +260,17 @@ main.pageOneMain{
 
 
 section>h2, article>section h4{
-  color:black;
+  color: white;
   
 }
 section p{
-  color: rgba(238,216,143, 1	);
+  /* color: rgba(238,216,143, 1	); */
  
   font-size: 20px;
 }
 
-section.toDos>h4{
+section.toDos>h2{
 margin: 1%;
-color: black;
+color: white
 
 }
